@@ -3,12 +3,12 @@ let backgroundColor = 200;
 
 
 function setup() {
-  createCanvas(600, 600);
+  createCanvas(windowWidth, windowHeight);
   background(backgroundColor);
 }
 
 function draw() {
-  background(200);
+  background(220, 50, 133, 5);
   strokeWeight(5);
   noFill();
 
@@ -39,16 +39,18 @@ function keyTyped() {
     //save image
     saveCanvas('fileName', 'jpg');
 
-} else if (key === 'd') {
-  background(255);
+} else if (key === 'c') {
 
-  beginShape();
-  for(let i = 0; i < array.length; i++){
-
-curveVertex(array[i][0], array[i][1])
-}
-endShape();
-  //display image
+  clear();
+//
+//
+//   beginShape();
+//   for(let i = 0; i < array.length; i++){
+// 
+// curveVertex(array[i][0], array[i][1])
+// }
+// endShape();
+//   //display image
 
 
 
